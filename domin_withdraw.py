@@ -10,13 +10,15 @@ btc = "3MUT2imvKa2V4BZ6cBGAfZFeQ5PS9kopdk"
 
 
 chrome_options = Options()  
+chrome_options.binary_location = r"/app/.apt/usr/bin/google-chrome"
 # chrome_options.add_argument("--headless")
 
 print("------------------------------------------------------\nDOMINIUMPRO.com BOT || VERSION 1.0 \n------------------------------------------------------\nBY - AHMAD TAHA || CONTACT - ahmadtahaco@gmail.com\n======================================================\n")
 print ("\n>> Opening Browser")
 
-driver = webdriver.Chrome(executable_path="chromedriver.exe",chrome_options=chrome_options)
-driver.maximize_window()
+#driver = webdriver.Chrome(executable_path="chromedriver.exe",chrome_options=chrome_options)
+driver = webdriver.Chrome(chrome_options=chrome_options)
+#driver.maximize_window()
 
 driver.get("http://www.dominiumpro.com/index.php")
 
